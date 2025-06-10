@@ -1,0 +1,17 @@
+
+{
+  "date": "2025-06-10",
+  "birthdays": ["Anil Reddy", "Sowmya Iyer"],
+  "anniversaries": ["Karthik Rao - 3 Years", "Neha Shah - 5 Years"],
+  "achievements": [
+    "Crossed 1M Users",
+    "Launched SmartOnboarding",
+    "Opened Branch in Hyderabad"
+  ],
+  "products": [
+    "TimeTrack HR",
+    "SmartOnboarding",
+    "Pulse360"
+  ],
+  "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4"
+}
