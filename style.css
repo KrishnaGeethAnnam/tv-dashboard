@@ -18,20 +18,27 @@ main {
   padding: 2rem;
 }
 
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .row {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .block {
-  flex: 1 1 45%;
+  flex: 1 1 calc(50% - 1rem);
   background-color: #222;
-  margin: 1rem;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  min-width: 300px;
 }
 
 h2 {
