@@ -5,10 +5,9 @@ body {
   color: white;
 }
 
-header {
-  text-align: center;
-  padding: 1rem;
-  background-color: #6666D1;
+header.left-align {
+  text-align: left;
+  padding: 1rem 2rem;
 }
 
 header img {
@@ -16,10 +15,14 @@ header img {
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -51,7 +54,7 @@ video {
 .slider .slide-container {
   overflow: hidden;
   position: relative;
-  height: 150px;
+  height: 160px;
 }
 
 .slide {
