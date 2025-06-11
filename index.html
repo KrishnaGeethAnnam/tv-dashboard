@@ -1,30 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Company TV Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dataflix TV Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="block" id="block-birthdays">
-            <h2>🎉 Birthdays & Anniversaries</h2>
-            <div id="birthdays-list"></div>
+  <header>
+    <img src="assets/logo.webp" alt="Dataflix Logo" />
+  </header>
+  <main>
+    <section class="block" id="birthdays">
+      <h2>🎉 Birthdays & Anniversaries</h2>
+      <ul>
+        <li>John Doe - Birthday 🎂</li>
+        <li>Jane Smith - 5 Year Anniversary 🎉</li>
+        <!-- Add more manually or dynamically later -->
+      </ul>
+    </section>
+
+    <section class="block slider" id="products">
+      <h2>🚀 Company Products</h2>
+      <div class="slide-container" id="product-slides">
+        <div class="slide">
+          <h3>ConverX Messenger</h3>
+          <p>A rich conversational UI for Dialogflow agents on GCP with secure integration.</p>
         </div>
-        <div class="block" id="block-achievements">
-            <h2>🏆 Company Achievements</h2>
-            <div id="achievements-list"></div>
+        <div class="slide">
+          <h3>GenIQ</h3>
+          <p>Generates real-time summaries and answers from all document types using Gen AI.</p>
         </div>
-        <div class="block" id="block-products">
-            <h2>🛠️ Company Products</h2>
-            <div id="products-list"></div>
+        <div class="slide">
+          <h3>Status Ping</h3>
+          <p>Monitors websites/services and alerts you when they go down.</p>
         </div>
-        <div class="block" id="block-video">
-            <h2>🎥 Employee Engagements</h2>
-            <video id="video-section" controls autoplay muted loop></video>
+      </div>
+    </section>
+
+    <section class="block slider" id="success">
+      <h2>🏆 Customer Success</h2>
+      <div class="slide-container" id="success-slides">
+        <div class="slide">
+          <h3>HAEA + Dataflix</h3>
+          <p>Built a Dialogflow-based AI chatbot for KIA customers, driving engagement and results.</p>
+          <blockquote>
+            “I would highly recommend Dataflix to any company looking to implement innovative technology.”<br>
+            – Henry Roberts, CEO
+          </blockquote>
         </div>
-    </div>
-    <script src="script.js"></script>
+      </div>
+    </section>
+
+    <section class="block" id="engagement">
+      <h2>🎥 Employee Engagement</h2>
+      <video controls autoplay loop muted>
+        <source src="assets/employee-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
